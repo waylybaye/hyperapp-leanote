@@ -1,5 +1,5 @@
-FROM alpine:3.3
-ARG ARG VERSION=2.4
+FROM alpine:latest
+ARG VERSION=2.4
 
 RUN apk --update add curl && \
     curl -L http://sourceforge.net/projects/leanote-bin/files/${VERSION}/leanote-linux-amd64-v${VERSION}.bin.tar.gz/download >> \
